@@ -78,6 +78,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # http://bloccit.herokuapp.com
-  config.action_mailer.default_url_options = { host: 'bloccit.herokuapp.com' }
- end
+  config.action_mailer.default_url_options = { host: 'abena-bloccit2.herokuapp.com' }
+
 end
