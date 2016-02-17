@@ -76,3 +76,11 @@ gem 'fog'
 ruby '2.2.2'
 
 gem 'will_paginate', '~> 3.0.5'
+
+group :development do
+  gem "better_errors"
+end  
+
+gem "binding_of_caller"
+
+gem 'pry-rails', :group => :development
