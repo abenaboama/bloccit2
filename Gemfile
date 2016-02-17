@@ -84,3 +84,4 @@ end
 gem "binding_of_caller"
 
 gem 'pry-rails', :group => :development
+gem 'puma'
