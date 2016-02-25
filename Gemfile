@@ -84,4 +84,11 @@ end
 gem "binding_of_caller"
 
 gem 'pry-rails', :group => :development
+
 gem 'puma'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
+
