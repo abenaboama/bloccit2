@@ -19,7 +19,7 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
     authorize @topic    
   end
-
+ 
   def create
     @topic = Topic.new(params.require(:topic).permit(:name, :description, :public))
     authorize @topic

@@ -13,6 +13,8 @@ class Post < ActiveRecord::Base
 
   mount_uploader :image, ImageUploader
 
+  after_create :create_vote
+
   def up_votes
     votes.where(value: 1).count
   end
