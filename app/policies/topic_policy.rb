@@ -1,4 +1,7 @@
 class TopicPolicy < ApplicationPolicy
+  def show?
+    record.public? || user.present?
+  end  
  
   def index?
     true
